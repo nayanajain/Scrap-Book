@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> All Employee Details </title>
+    </head>
+    <body>
+        <h2> All Employee Records </h2>
+        <table border="1">
+            <tr>
+                <td> Emp Code </td>
+                <td> Emp Name </td>
+                <td> Emp DOB </td>
+                <td> Emp Salary </td>
+                <td> Emp City </td>
+            </tr>
+            {% for emp in emp_info %}
+                <tr>
+                    <td>{{emp.ECode}}</td>
+                    <td>{{emp.EName}}</td>
+                    <td>{{emp.EDOB}}</td>
+                    <td>{{emp.ESalary}}</td>
+                    <td>{{emp.ECity}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
